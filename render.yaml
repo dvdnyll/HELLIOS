@@ -1,19 +1,19 @@
 services:
   - type: web
-    name: mega-md
+    name: HELLIOS
     runtime: docker
     dockerfilePath: lib/Dockerfile
     envVars:
       - key: SESSION_ID
         value: ""
       - key: OWNER_NUMBER
-        value: "923000000000"
+        value: "62895335738913"
       - key: BOT_NAME
-        value: "MEGA-MD"
+        value: "HELLIOS"
       - key: COMMAND_MODE
         value: "public"
       - key: TIMEZONE
-        value: "Asia/Karachi"
+        value: "Asia/Jakarta"
       - key: MONGO_URL
         value: ""
       - key: POSTGRES_URL
