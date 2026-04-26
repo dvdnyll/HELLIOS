@@ -1,7 +1,7 @@
 {
-  "name": "mega-md",
+  "name": "HELLIOS",
   "version": "6.0.0",
-  "description": "High performance multi-device WhatsApp bot",
+  "description": "Albatrels bot",
   "type": "module",
   "main": "index.js",
   "directories": {
@@ -28,19 +28,19 @@
   "keywords": [
     "whatsapp-bot",
     "baileys-bot",
-    "Mega-Md",
+    "HELLIOS",
     "Suhail-Md",
     "multi-device",
     "nodejs-bot",
     "javascript-bot"
   ],
-  "homepage": "https://github.com/GlobalTechInfo/MEGA-MD",
+  "homepage": "https://github.com/GlobalTechInfo/HELLIOS",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GlobalTechInfo/MEGA-MD.git"
+    "url": "git+https://github.com/GlobalTechInfo/HELLIOS.git"
   },
   "bugs": {
-    "url": "https://github.com/GlobalTechInfo/MEGA-MD/issues"
+    "url": "https://github.com/GlobalTechInfo/HELLIOS/issues"
   },
   "license": "MIT",
   "author": "Qasim Ali",
