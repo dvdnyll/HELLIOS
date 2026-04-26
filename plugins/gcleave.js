@@ -17,7 +17,7 @@ export default {
         }
         try {
             await sock.sendMessage(targetJid, {
-                text: `👋 *Bot is leaving the group.*\n\n_Goodbye everyone!_`,
+                text: `👋 *Hellios is leaving the group.*\n\n_Goodbye everyone!_`,
                 ...channelInfo
             });
             await new Promise(r => setTimeout(r, 500));
