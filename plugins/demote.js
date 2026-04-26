@@ -76,11 +76,7 @@ export default {
                 return `@${jid.split('@')[0]}`;
             }));
             await new Promise(resolve => setTimeout(resolve, 1000));
-            const demotionMessage = `*『 GROUP DEMOTION 』*\n\n` +
-                `👤 *Demoted User${userToDemote.length > 1 ? 's' : ''}:*\n` +
-                `${usernames.map(name => `• ${name}`).join('\n')}\n\n` +
-                `👑 *Demoted By:* @${message.key.participant ? message.key.participant.split('@')[0] : message.key.remoteJid.split('@')[0]}\n\n` +
-                `📅 *Date:* ${new Date().toLocaleString()}`;
+            const demotionMessage = `*Dia dihempaskan dari tahta${userToDemote.length > 1 ? 's' : ''}:*\n`;
             await sock.sendMessage(chatId, {
                 text: demotionMessage,
                 mentions: [...userToDemote, message.key.participant || message.key.remoteJid]
