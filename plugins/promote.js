@@ -19,11 +19,8 @@ async function handlePromotionEvent(sock, groupId, participants, author) {
         else {
             promotedBy = 'System';
         }
-        const promotionMessage = `*『 GROUP PROMOTION 』*\n\n` +
-            `👥 *Promoted User${participants.length > 1 ? 's' : ''}:*\n` +
-            `${promotedUsernames.map(name => `• ${name}`).join('\n')}\n\n` +
-            `👑 *Promoted By:* ${promotedBy}\n\n` +
-            `📅 *Date:* ${new Date().toLocaleString()}`;
+        const promotionMessage = `Si ${participants.length > 1 ? 's' : ''}:*\n` +
+        `naik tahta`;
         await sock.sendMessage(groupId, {
             text: promotionMessage,
             mentions: mentionList
@@ -64,11 +61,8 @@ export default {
                 return `@${jid.split('@')[0]}`;
             }));
             const promoterJid = sock.user.id;
-            const promotionMessage = `*『 GROUP PROMOTION 』*\n\n` +
-                `👥 *Promoted User${userToPromote.length > 1 ? 's' : ''}:*\n` +
-                `${usernames.map(name => `• ${name}`).join('\n')}\n\n` +
-                `👑 *Promoted By:* @${promoterJid.split('@')[0]}\n\n` +
-                `📅 *Date:* ${new Date().toLocaleString()}`;
+            const promotionMessage = `Si ${userToPromote.length > 1 ? 's' : ''}:\n` +
+                `turun tahta`;
             await sock.sendMessage(chatId, {
                 text: promotionMessage,
                 mentions: [...userToPromote, promoterJid],
