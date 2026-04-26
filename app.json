@@ -1,8 +1,8 @@
 {
-  "name": "mega-md",
+  "name": "HELLIOS",
   "description": "High performance multi-device WhatsApp bot",
-  "keywords": ["whatsapp-bot", "baileys", "mega-md"],
-  "repository": "https://github.com/GlobalTechInfo/MEGA-MD",
+  "keywords": ["whatsapp-bot", "baileys", "HELLIOS"],
+  "repository": "https://github.com/dvdnyll/HELLIOS",
   "stack": "container",
   "env": {
     "SESSION_ID": {
@@ -33,7 +33,7 @@
     "BOT_NAME": {
       "description": "Your bot name",
       "required": false,
-      "value": "MEGA-MD"
+      "value": "HELLIOS"
     },
     "BOT_OWNER": {
       "description": "Owner display name",
@@ -48,7 +48,7 @@
     "PACKNAME": {
       "description": "Sticker pack name",
       "required": false,
-      "value": "MEGA-MD"
+      "value": "HELLIOS"
     },
     "COMMAND_MODE": {
       "description": "Bot mode: public or private",
