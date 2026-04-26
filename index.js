@@ -287,16 +287,10 @@ async function startQasimDev() {
                     printLog('error', `Error in handleMessages: ${err.message}`);
                     if (mek.key && mek.key.remoteJid) {
                         await QasimDev.sendMessage(mek.key.remoteJid, {
-                            text: '❌ An error occurred while processing your message.',
-                            contextInfo: {
-                                externalAdReply: {
-                                    title: 'HELLIOS',
-                                    body: 'Albatrels Based',
-                                    sourceUrl: 'https://www.whatsapp.com/channel/0029Vb9chnJ6GcGJFC5KyE1w',
-                                    mediaType: 1,
-                                    renderLargerThumbnail: true
-                                }
-                            }
+                            text: `❌ An error occurred while processing your message.
+                        
+                        Albatrels based:
+                        https://whatsapp.com/channel/0029Vb9chnJ6GcGJFC5KyE1w`
                         }).catch(console.error);
                     }
                 }
@@ -439,25 +433,18 @@ async function startQasimDev() {
                 }
                 printLog('success', `Connected to => ${ JSON.stringify(QasimDev.user, null, 2)}`);
                 try {
-                const botNumber = `${QasimDev.user.id.split(':')[0]}@s.whatsapp.net`;
-                const ghostStatus = (ghostMode && ghostMode.enabled) ? '\n👻 Stealth Mode: ACTIVE' : '';
-            
-                await QasimDev.sendMessage(botNumber, {
-                    text: `🤖 Bot Connected Successfully!\n\n⏰ Time: ${new Date().toLocaleString()}\n✅ Status: Online and Ready!${ghostStatus}\n\n✅ Make sure to join below channel`,
-                    contextInfo: {
-                        externalAdReply: {
-                            title: 'HELLIOS',
-                            body: 'Albatrels Based',
-                            sourceUrl: 'https://www.whatsapp.com/channel/0029Vb9chnJ6GcGJFC5KyE1w',
-                            mediaType: 1,
-                            renderLargerThumbnail: true
-                        }
-                    }
-                });
-
-} catch (err) {
-    console.error(err);
-}
+                    const botNumber = `${QasimDev.user.id.split(':')[0] }@s.whatsapp.net`;
+                    const ghostStatus = (ghostMode && ghostMode.enabled) ? '\n👻 Stealth Mode: ACTIVE' : '';
+                    await QasimDev.sendMessage(botNumber, {
+                        text: `🤖 Bot Connected Successfully!
+                    
+                    ⏰ Time: ${new Date().toLocaleString()}
+                    ✅ Status: Online and Ready!${ghostStatus}
+                    
+                    Albatrels Based:
+                    https://whatsapp.com/channel/0029Vb9chnJ6GcGJFC5KyE1w`
+                    });
+                }
                 catch (error) {
                     printLog('error', `Failed to send connection message: ${error.message}`);
                 }
@@ -520,7 +507,7 @@ async function startQasimDev() {
 async function main() {
     await compileAll();
     await commandHandler.loadCommands();
-    printLog('info', 'Starting HELLIOS ALBATRELS BOT...');
+    printLog('info', 'Starting MEGA MD BOT...');
     await initializeSession();
     await delay(3000);
     startQasimDev().catch((error) => {
