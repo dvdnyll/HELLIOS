@@ -74,7 +74,7 @@ try {
 catch {
     owner = [];
 }
-global.botname = config.botName || "MEGA-MD";
+global.botname = config.botName || "HELLIOS";
 global.themeemoji = "•";
 const pairingCode = !process.argv.includes("--qr-code");
 const useMobile = process.argv.includes("--mobile");
@@ -287,10 +287,7 @@ async function startQasimDev() {
                     printLog('error', `Error in handleMessages: ${err.message}`);
                     if (mek.key && mek.key.remoteJid) {
                         await QasimDev.sendMessage(mek.key.remoteJid, {
-                            text: `❌ An error occurred while processing your message.
-                        
-                        Albatrels based:
-                        https://whatsapp.com/channel/0029Vb9chnJ6GcGJFC5KyE1w`
+                            text: `❌ An error occurred while processing your message.`
                         }).catch(console.error);
                     }
                 }
@@ -439,10 +436,7 @@ async function startQasimDev() {
                         text: `🤖 Bot Connected Successfully!
                     
                     ⏰ Time: ${new Date().toLocaleString()}
-                    ✅ Status: Online and Ready!${ghostStatus}
-                    
-                    Albatrels Based:
-                    https://whatsapp.com/channel/0029Vb9chnJ6GcGJFC5KyE1w`
+                    ✅ Status: Online and Ready!${ghostStatus}`
                     });
                 }
                 catch (error) {
@@ -453,7 +447,7 @@ async function startQasimDev() {
                     owner = JSON.parse(fs.readFileSync('./data/owner.json', 'utf-8'));
                 }
                 catch (_e) { }
-                printLog('info', `[ ${config.botName || 'MEGA-MD'} ]`);
+                printLog('info', `[ ${config.botName || 'HELLIOS'} ]`);
                 printLog('info', `WA NUMBER  : ${owner[0] || config.ownerNumber || ''}`);
                 printLog('success', `Bot Connected Successfully!`);
                 printLog('info', `Plugins   : ${commandHandler.commands.size}`);
@@ -507,7 +501,7 @@ async function startQasimDev() {
 async function main() {
     await compileAll();
     await commandHandler.loadCommands();
-    printLog('info', 'Starting MEGA MD BOT...');
+    printLog('info', 'Starting HELLIOS Albatrels BOT...');
     await initializeSession();
     await delay(3000);
     startQasimDev().catch((error) => {
