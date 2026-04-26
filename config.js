@@ -2,11 +2,11 @@ import 'dotenv/config';
 const _prefixes = process.env.PREFIXES ? process.env.PREFIXES.split(',') : ['.', '!', '/', '#'];
 const config = {
     // Bot Identity
-    botName: process.env.BOT_NAME || 'MEGA-MD',
-    botOwner: process.env.BOT_OWNER || 'Qasim Ali',
-    ownerNumber: process.env.OWNER_NUMBER || '923051391007',
-    author: process.env.AUTHOR || 'GlobalTechInfo',
-    packname: process.env.PACKNAME || 'MEGA-MD',
+    botName: process.env.BOT_NAME || 'HELLIOS',
+    botOwner: process.env.BOT_OWNER || 'Bhre Jaleon Bagaskara',
+    ownerNumber: process.env.OWNER_NUMBER || '62895335738913',
+    author: process.env.AUTHOR || 'Albatrels Garage',
+    packname: process.env.PACKNAME || 'HELLIOS',
     description: process.env.DESCRIPTION || 'High performance multi-device WhatsApp bot',
     version: '6.0.0',
     // Bot Config
@@ -15,12 +15,12 @@ const config = {
     commandMode: process.env.COMMAND_MODE || 'public',
     timeZone: process.env.TIMEZONE || 'Asia/Karachi',
     // Links
-    channelLink: process.env.CHANNEL_LINK || 'https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07',
-    updateZipUrl: process.env.UPDATE_URL || 'https://github.com/GlobalTechInfo/MEGA-MD/archive/refs/heads/main.zip',
-    ytChannel: process.env.YT_CHANNEL || 'GlobalTechInfo',
+    channelLink: process.env.CHANNEL_LINK || 'https://whatsapp.com/channel/0029Vb9chnJ6GcGJFC5KyE1w',
+    updateZipUrl: process.env.UPDATE_URL || 'https://github.com/dvdnyll/HELLIOS/archive/refs/heads/main.zip',
+    ytChannel: process.env.YT_CHANNEL || 'P1Harmony',
     // Session
     sessionId: process.env.SESSION_ID || '',
-    pairingNumber: process.env.PAIRING_NUMBER || '',
+    pairingNumber: process.env.PAIRING_NUMBER || '6285773323706',
     // Performance
     port: Number(process.env.PORT) || 5000,
     maxStoreMessages: Number(process.env.MAX_STORE_MESSAGES) || 20,
@@ -28,7 +28,7 @@ const config = {
     storeWriteInterval: Number(process.env.STORE_WRITE_INTERVAL) || 10000,
     // API Keys
     giphyApiKey: process.env.GIPHY_API_KEY || 'qnl7ssQChTdPjsKta2Ax2LMaGXz303tq',
-    removeBgKey: process.env.REMOVEBG_KEY || '',
+    removeBgKey: process.env.REMOVEBG_KEY || 'h5M128Ujv7F6guSk1Fx1UAKh',
     // Warn system
     warnCount: 3,
     // External APIs
