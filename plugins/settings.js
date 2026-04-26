@@ -41,10 +41,10 @@ export default {
                 cmdReactEnabled = true;
             }
             const getSt = (val) => val ? '✅' : '❌';
-            let menuText = `╭━〔 *MEGA CONFIG* 〕━┈\n┃\n`;
+            let menuText = `╭━〔 *HELLIOS MENU* 〕━┈\n┃\n`;
             menuText += `┃ 👤 *User:* @${cleanJid(senderId)}\n`;
             menuText += `┃ 🤖 *Mode:* ${botMode.toUpperCase()}\n`;
-            menuText += `┃\n┣━〔 *GLOBAL CONFIG* 〕━┈\n`;
+            menuText += `┃\n┣━〔 *SETTINGS* 〕━┈\n`;
             menuText += `┃ ${getSt(autoStatus?.enabled)} *Auto Status*\n`;
             menuText += `┃ ${getSt(autoread?.enabled)} *Auto Read*\n`;
             menuText += `┃ ${getSt(autotyping?.enabled)} *Auto Typing*\n`;
@@ -90,7 +90,7 @@ export default {
                     externalAdReply: {
                         title: "SYSTEM SETTINGS PANEL",
                         body: "Configuration Status",
-                        thumbnailUrl: "https://github.com/GlobalTechInfo.png",
+                        thumbnailUrl: "https://ibb.co/MkcybJvr",
                         mediaType: 1,
                         renderLargerThumbnail: true
                     }
