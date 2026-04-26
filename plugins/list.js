@@ -29,7 +29,7 @@ function formatTime() {
 const menuStyles = [
     {
         render({ _title, info, categories, prefix }) {
-            let t = `╭━━『 *MEGA MENU* 』━⬣\n`;
+            let t = `╭━━『 *    HELLIOS    * 』━⬣\n`;
             t += `┃ ✨ *Bot: ${info.bot}*\n`;
             t += `┃ 🔧 *Prefix: ${info.prefix}*\n`;
             t += `┃ 📦 *Plugin: ${info.total}*\n`;
@@ -46,7 +46,7 @@ const menuStyles = [
     },
     {
         render({ _title, info, categories, prefix }) {
-            let t = `◈╭─❍「 *MEGA MENU* 」❍\n`;
+            let t = `◈╭─❍「 *    HELLIOS    * 」❍\n`;
             t += `◈├• 🌟 *Bot: ${info.bot}*\n`;
             t += `◈├• ⚙️ *Prefix: ${info.prefix}*\n`;
             t += `◈├• 🍫 *Plugins: ${info.total}*\n`;
@@ -63,7 +63,7 @@ const menuStyles = [
     },
     {
         render({ _title, info, categories, prefix }) {
-            let t = `┏━━━━ *MEGA MENU* ━━━┓\n`;
+            let t = `┏━━━━ *    HELLIOS    * ━━━┓\n`;
             t += `┃• *Bot : ${info.bot}*\n`;
             t += `┃• *Prefixes : ${info.prefix}*\n`;
             t += `┃• *Plugins : ${info.total}*\n`;
@@ -80,7 +80,7 @@ const menuStyles = [
     },
     {
         render({ _title, info, categories, prefix }) {
-            let t = `✦═══ *MEGA MENU* ═══✦\n`;
+            let t = `✦═══ *    HELLIOS    * ═══✦\n`;
             t += `║➩ *Bot: ${info.bot}*\n`;
             t += `║➩ *Prefixes: ${info.prefix}*\n`;
             t += `║➩ *Plugins: ${info.total}*\n`;
@@ -97,7 +97,7 @@ const menuStyles = [
     },
     {
         render({ _title, info, categories, prefix }) {
-            let t = `❀━━━ *MEGA MENU* ━━━❀\n`;
+            let t = `❀━━━ *    HELLIOS    * ━━━❀\n`;
             t += `┃☞ *Bot: ${info.bot}*\n`;
             t += `┃☞ *Prefixes: ${info.prefix}*\n`;
             t += `┃☞ *Plugins: ${info.total}*\n`;
@@ -114,7 +114,7 @@ const menuStyles = [
     },
     {
         render({ _title, info, categories, prefix }) {
-            let t = `◆━━━ *MEGA MENU* ━━━◆\n`;
+            let t = `◆━━━ *    HELLIOS    * ━━━◆\n`;
             t += `┃ ¤ *Bot: ${info.bot}*\n`;
             t += `┃ ¤ *Prefixes: ${info.prefix}*\n`;
             t += `┃ ¤ *Plugins: ${info.total}*\n`;
@@ -131,7 +131,7 @@ const menuStyles = [
     },
     {
         render({ _title, info, categories, prefix }) {
-            let t = `╭───⬣ *MEGA MENU* ──⬣\n`;
+            let t = `╭───⬣ *    HELLIOS    * ──⬣\n`;
             t += ` | ● *Bot: ${info.bot}*\n`;
             t += ` | ● *Prefixes: ${info.prefix}*\n`;
             t += ` | ● *Plugins: ${info.total}*\n`;
