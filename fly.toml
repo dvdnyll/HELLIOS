@@ -1,4 +1,4 @@
-app = "mega-md"
+app = "HELLIOS"
 primary_region = "iad"
 
 [build]
@@ -6,11 +6,11 @@ primary_region = "iad"
 
 [env]
   PORT = "5000"
-  BOT_NAME = "MEGA-MD"
+  BOT_NAME = "HELLIOS"
   COMMAND_MODE = "public"
-  TIMEZONE = "Asia/Karachi"
+  TIMEZONE = "Asia/Jakarta"
   SESSION_ID = ""
-  OWNER_NUMBER = "923000000000"
+  OWNER_NUMBER = "62895335738913"
   MONGO_URL = ""
   POSTGRES_URL = ""
   MYSQL_URL = ""
